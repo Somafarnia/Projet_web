@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelma's coffee house</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="index.html">Main Page</a>
+        <a href="about_us.html">About Us</a>
+        <a href="javascript:void(0);" onclick="goToPaymentPage()">Pannier</a>
+    </div>
+    <div id="dynamic-images">
+        <div class="floating-image" style="background-image: url('image1.jpg');"></div>
+        <div class="floating-image" style="background-image: url('image4.jpg');"></div>
+        <div class="floating-image" style="background-image: url('image5.jpg');"></div>
+        <div class="floating-image" style="background-image: url('image7.jpg');"></div>
+        <div class="centered-title">Amelma's Coffee House</div>
+    </div>
+    <header>
+        <img src="header-background.jpg" class="header-background" alt="Coffee aroma">
+        <h1>Welcome to Our Coffee Shop</h1>
+    </header>
+    <div id="selections">
+        <!-- Syrup Selection -->
+        <div id="syrups" class="selection-screen hidden">
+            <h2>Select Your Syrup</h2>
+            <div class="options">
+                <div class="option" data-type="Vanilla">
+                    <img src="vanilla_syrup.jpg" alt="Vanilla Syrup">
+                    <p>Vanilla</p>
+                </div>
+                <div class="option" data-type="Caramel">
+                    <img src="caramel_syrup.jpg" alt="Caramel Syrup">
+                    <p>Caramel</p>
+                </div>
+                <div class="option" data-type="Hazelnut">
+                    <img src="hazelnut_syrup.jpg" alt="Hazelnut Syrup">
+                    <p>Hazelnut</p>
+                </div>
+            </div>
+        </div>
+        <!-- Milk Type Selection -->
+        <div id="milk-types" class="selection-screen hidden">
+            <h2>Select Your Milk</h2>
+            <div class="options">
+                <div class="option" data-type="Cow">
+                    <img src="cow_milk.jpg" alt="Cow Milk">
+                    <p>Cow</p>
+                </div>
+                <div class="option" data-type="Almond">
+                    <img src="almond_milk.jpg" alt="Almond Milk">
+                    <p>Almond</p>
+                </div>
+                <div class="option" data-type="Oat">
+                    <img src="oat_milk.jpg" alt="Oat milk">
+                    <p>Oat</p>
+                </div>
+                <div class="option" data-type="Coco">
+                    <img src="coco_milk.jpg" alt="Coco milk">
+                    <p>Coco</p>
+                </div>
+            </div>
+        </div>
+        <!-- Coffee Type Selection -->
+        <div id="coffee-types" class="selection-screen">
+            <h2>Select Your Coffee Roast</h2>
+            <div class="options">
+                <div class="option" data-type="Blonde Roast">
+                    <img src="blonde_roast.jpg" alt="Blonde Roast">
+                    <p>Blonde Roast</p>
+                </div>
+                <div class="option" data-type="Medium Roast">
+                    <img src="medium_roast.jpg" alt="Medium Roast">
+                    <p>Medium Roast</p>
+                </div>
+                <div class="option" data-type="Dark Roast">
+                    <img src="dark_roast.jpg" alt="Dark Roast">
+                    <p>Dark Roast</p>
+                </div>
+                <div class="option" data-type="Decaffeinated">
+                    <img src="decaffeinated.jpg" alt="Decaffeinated">
+                    <p>Decaffeinated</p>
+                </div>
+        <div id="basket" class="hidden">
+            <h3>Faire chauffer la carte!</h3>
+         <ul id="basket-list"></ul>
+         <img src="basket_icon.jpg" alt="Basket" onclick="goToPaymentPage()">
+        </div>
+    <script src="script.js"></script>
+    <a href=mailto:soma.farnia@etu-u.paris.fr,amel.lebsir@etu-u.paris.fr?subject=coffee%20house%20request%20>We are hearing your voice</a>
+</body>
+</html>

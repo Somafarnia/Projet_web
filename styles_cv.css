@@ -1,0 +1,176 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #070608;
+    font-size: 18px;
+    color:#FFFFFF;
+    font-weight:400;
+}
+
+/*the email section*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the menu toggle button */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    z-index: 2; /* Ensure it's above other content */
+    cursor: pointer;
+}
+
+/* Initial state for the sidebar for mobile*/
+.side-menu {
+    width: 250px;
+    transform: translateX(-250px); /* Start off-screen */
+    transition: transform 0.3s ease;
+}
+
+/* State of sidebar when it's shown */
+.side-menu.show {
+    transform: translateX(0); /* Move onto the screen */
+}
+
+/* Optional: style to push the content to the right when sidebar is shown */
+.content.show-sidebar {
+    margin-left: 300px;
+}
+
+
+.side-menu {
+    background: #300052; /* Dark side menu background */
+    padding: 20px;
+    width: 200px; /* Side menu width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+}
+
+.side-menu nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu nav ul li a {
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.side-menu nav ul li a:hover,
+.side-menu nav ul li a:focus {
+    background-color: #48146D; /* Highlight for active/hover state */
+}
+
+.contact-info{
+    border: 2px solid #8A2BE2; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #8A2BE2, /* Inner white glow */
+        0 0 15px #8A2BE2, /* Middle pink glow */
+        0 0 30px #8A2BE2, /* Outer blue glow */
+        0 0 45px #8A2BE2; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.skills{
+    border: 2px solid #C72BE2; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #C72BE2, /* Inner white glow */
+        0 0 15px #C72BE2, /* Middle pink glow */
+        0 0 30px #C72BE2, /* Outer blue glow */
+        0 0 45px #C72BE2; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.interests{
+    border: 2px solid #E22B62; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #E22B62, /* Inner white glow */
+        0 0 15px #E22B62, /* Middle pink glow */
+        0 0 30px #E22B62, /* Outer blue glow */
+        0 0 45px #E22B62; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.languages{
+    border: 2px solid #FFE900; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #FFE900, /* Inner white glow */
+        0 0 15px #FFE900, /* Middle pink glow */
+        0 0 30px #FFE900, /* Outer blue glow */
+        0 0 45px #FFE900; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.education{
+    border: 2px solid #99FF00; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #99FF00, /* Inner white glow */
+        0 0 15px #99FF00, /* Middle pink glow */
+        0 0 30px #99FF00, /* Outer blue glow */
+        0 0 45px #99FF00; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.experience{
+    border: 2px solid #00BDFF; /* Your choice of neon color */
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #00BDFF, /* Inner white glow */
+        0 0 15px #00BDFF, /* Middle pink glow */
+        0 0 30px #00BDFF, /* Outer blue glow */
+        0 0 45px #00BDFF; /* Additional outermost glow */
+    padding: 20px;
+    margin-bottom: 30px; /* Spacing between sections */
+    color: white; /* Text color */
+    background: #000000; /* Dark background for the content */
+}
+.content {
+    margin-left: 250px; /* Same as the side menu width */
+    padding: 20px;
+}
+
+.cv-section {
+    display: none; /* Hide all sections initially */
+    transition: all 0.5s ease; /* Smooth transition for showing sections */
+    color: white; /* Text color for CV content */
+    border: white;
+    
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100px; /* Adjust the side menu width on smaller screens */
+    }
+    .content {
+        margin-left: 100px; /* Adjust content margin to match side menu */
+    }
+}
